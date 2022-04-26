@@ -1,0 +1,19 @@
+# creating users on ubuntu
+ https://linuxize.com/post/how-to-add-and-delete-users-on-ubuntu-18-04/#:~:text=or%20via%20GUI.-,Delete%20a%20User%20from%20the%20Command%20Line,than%20the%20
+
+# There are two commands to create a user
+  useradd <username>
+  adduser <username> (sudo adduser <username>)
+
+# Deleting a user from the command line
+  https://linuxize.com/post/how-to-add-and-delete-users-on-ubuntu-18-04/#:~:text=or%20via%20GUI.-,Delete%20a%20User%20from%20the%20Command%20Line,than%20the%20low%2Dlevel%20userdel%20
+
+# There are two commands to delete a user on a command line
+  userdel <username>
+  deluser <username>
+
+# To install tree on CentOS
+  yum install tree
+
+# To install tree on Ubuntu
+  apt install tree
