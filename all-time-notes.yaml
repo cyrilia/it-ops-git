@@ -1,0 +1,110 @@
+# ensuring docker daemon & desktop is running
+docker --version
+
+# command to List active containers = docker ps; to list all containers docker ps -a
+docker ps
+docker ps -a 
+
+# command to delete docker containers = docker rm container id/name = Remove one or more containers
+docker rm bf41ffef772f 1b4b3b0bf1e6 974d86f669e3 -f
+
+# command to get all docker images = List images
+docker images
+
+# command to delete docker images = docker rmi image id; Remove one or more images
+docker rmi eeb6ee3f44bd 5d0da3dc9764 -f
+
+825d55fb6340 eeb6ee3f44bd
+docker rmi cb90f98fd791 825d55fb6340 825d55fb6340 -f
+
+# delete all unused resources
+docker system prune --all --force
+docker system prune -a -f
+
+# Downloand 2 images, ubuntu20:04 & centos7 for 2 os 
+docker pull centos:7
+docker pull ubuntu:20.04
+
+# command to create and run containers
+# ubuntu && centos container 
+# --hostname , -h = Container host name
+# --name = Assign a name to the container
+docker run -it --name centos1 -h centos-1 centos:7 bash
+docker run -it --name ubuntu1 -h ubuntu-1 ubuntu:20.04 bash
+
+# to leave the container, execure exit
+exit
+
+# docker start
+docker start centos1
+docker start ubuntu1
+
+# enter the conatiners to execute commands
+docker exec -it centos1 bash
+docker exec -it ubuntu1 bash
+
+
+# when you enter your container, the first thing you do is update it
+    # centos container
+        the package manager is --> yum <-- :
+        yum update -y
+
+    # ubuntu container
+        the package manager is --> apt <-- :
+        apt update
+
+# stop the container
+docker stop centos1
+docker stop ubuntu1
+
+
+************************* 04/23/2022********************
+# link for creating and deleting users in centos
+https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-a-centos-7-server
+
+# which file, contains the list of all users in a linux system
+cat /etc/passwd
+
+# # which file, contains the list of all users' passwords  in a linux system
+cat /etc/shadow
+
+
+# add user
+sudo adduser <username>
+sudo adduser user1
+sudo adduser mira
+
+# created a user, create the users password
+passwd <username>
+passwd user1 = user1
+passwd mira = mira
+
+# in centos, the sudo=administrative group is wheel
+sudo usermod -aG wheel <username>
+sudo usermod -aG wheel mira
+
+# to delete users
+sudo uderdel <username>
+sudo userdel user1
+
+# to delete users home dir with the user
+sudo uderdel <username>
+sudo userdel -r user1
+
+# login as user into a docker containers
+docker exec -it -u mira centos1 bash
+
+# use tree to see the contents of a directory
+tree 
+
+# use cat to view the contents in a file
+cat /etc/passwd
+
+! Assignment
+Research for the commands for creating and deleting users in ubuntu operating system && bring your source
+
+Research how to install the tree package in both ubuntu:20.04 & centos7
+
+Finishing setting up your git repository
+push your it-ops directory and all its contents to git hub && post the links to the repo
+# it-ops-git
