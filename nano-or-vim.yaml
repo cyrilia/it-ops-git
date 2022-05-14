@@ -9,10 +9,12 @@ e.g windows, macos, android thanks to which commands can be sent without the nee
 
 # NANO: 
   It is the updated version of PICO, and is a very simple plain text editor as it doesn't have many advanced features.
+    * There are cheat sheet for the basic key bindings on nano at the botton of the terminal
+    * Nano comes by default on normal mode, t verify the mode we are on, we may look at the bottom left side of the terminal.
   
-  Features: 
-  * There are cheat sheet for the basic key bindings on nano at the botton of the terminal
-  * Nano comes by default on normal mode, t verify the mode we are on, we may look at the bottom left side of the terminal.
+ # VIM:
+  It's a free and open-source, screen-based text editor program built to make creating and changing any kind of text very efficient.
+    * It is included as "vi" with most UNIX systems and with Apple OS X.
 
 # Key bindings on Nano
     To navigate in the file system, we use the keys : 
