@@ -31,4 +31,7 @@ e.g windows, macos, android thanks to which commands can be sent without the nee
       press dd
     
     To delete a character:
-      press 
+      press x
+      
+    To quit:
+      :q
