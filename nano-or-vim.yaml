@@ -1,0 +1,34 @@
+### GNU Nano and Vim are text editors used to edit configuration files without being in a graphical environment.
+
+# config files
+  Files usd to configure parameters and initial settings for some computers
+
+# Graphical environment:
+  A type of user interface through which users interact with electronic devies via visual indicator representations
+e.g windows, macos, android thanks to which commands can be sent without the need to enter any code.
+
+# NANO: 
+  It is the updated version of PICO, and is a very simple plain text editor as it doesn't have many advanced features.
+  
+  Features: 
+  * There are cheat sheet for the basic key bindings on nano at the botton of the terminal
+  * Nano comes by default on normal mode, t verify the mode we are on, we may look at the bottom left side of the terminal.
+
+# Key bindings on Nano
+    To navigate in the file system, we use the keys : 
+      1. H (left), J (down), K (up) and L (right). We could also use the arrow keys
+
+    To move to the first line of the file:
+      press gg
+
+    To search for an instance:
+      press /<<instance>>
+    
+    To move to the next instance:
+      press n
+
+    To delete a line:
+      press dd
+    
+    To delete a character:
+      press 
