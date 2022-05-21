@@ -32,7 +32,7 @@ docker pull ubuntu:20.04
 docker run -it --name centos1 -h centos-1 centos:7 bash
 docker run -it --name ubuntu1 -h ubuntu-1 ubuntu:20.04 bash
 
-# to leave the container, execure exit
+# to leave the container, execute exit
 exit
 
 # docker start
