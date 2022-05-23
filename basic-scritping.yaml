@@ -1,0 +1,13 @@
+## Basic Scripting
+
+Scripting:
+A scripting language is a type of computer programming language used to provide instructions, called scripts, to software. Scripts contain a series of commands that a software, application or scripting engine interprets one at a time within a runtime environment.
+
+Bash: Bourne Again Shell is how we make linux do things. It could be used to write script
+
+To start a script, we type a shebang (#!/bin/bash)
+
+To execute a bash script, type bash <filename.sh> or ./<filename.sh>
+    *when running a script the bash command only needs a read permissions unlike ./ that needs execute permissions
+
+To add permissions, run chmod +x <filename.sh>
