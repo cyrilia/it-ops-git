@@ -1,23 +1,45 @@
+## Linux command line Basics:
+
+file: used to determine the type of a file
+    e.g file README.md (ASCII text)
+- Symbolic links provide a mechanism to refering to another file and can easily be identified by using ls -l or using file 
+
+grep: searches for the named input
+grep -i: ignore case distinctions
+    *To best use grep, we need to pipe it to the previous output.
+
+head: output the first part of files
+head -n: prints the first K lines instead of the first 10
+    *by default it prints the first 10 lines of a file to standard output
+
+tails: output the last part of files
+tails -n: prints the last K lines instead of the first 10
+    *by default it prints the last 10 lines of a file to standard output
+
+.: current directory
+..: parent directory
+
 mkdir: create a directory on linux
-    -v: verbose ()
+    -v: verbose (explain what is being done)
     -p: create parent directories
 
-rm: delete a file
+rm: remove files
 rm -r: delete a directory (empty or not)
+rm -i: prompt for confirmation before deletion
+    *By default rm does not remove directories
 
 touch: create a file
 echo: print content entered (can also be used to create files or add contents to a file)
 
-ls: list content of a directory
-    ls -------> list the files
+ls:
+    ls -------> list the content of current directory
     ls -l   --> long list
     ls -ltr --> long list based on reverse timing
     ls -lt  --> long list based on Time
     ls -a   --> list hidden files
-
-cat: display the content of a file
->: redirect a content to a file
->>: add content to a file
+    ls -lh  --> long list files with human readable size
+        *ls also accept arguements e.g ls Documents
+        *to know more about ls we can loof at the manual (man ls)
 
 -rw-r--r--   1 root root 12298 Nov 13  2020 anaconda-post.log
 lrwxrwxrwx   1 root root     7 Nov 13  2020 bin -> usr/bin
@@ -31,4 +53,9 @@ drwxr-xr-x   3 root root  4096 Apr 23 02:29 boot
 6. Time and date the file was modified
 7. file name
 
-docker create user
+less: view contents of text files
+      It could also be used to open many files at the time (press N for next and P for previous)
+
+cat: display the content of a file
+>: redirect a content to a file OR delete current file and create a new one
+>>: add content to a file
