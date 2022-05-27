@@ -15,7 +15,7 @@ sleep 3
 touch file1 file2 file3 file4 file5
 
 # Count the number files on the current directory
-ls | wc -l
+ls | wc -f
 
 # long list the old and new files and directories
 ls -l
