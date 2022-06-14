@@ -1,0 +1,51 @@
+# May 28.2022
+# Continue Bash Scipting
+# For more information about learning file system && permissions, https://kb.iu.edu/d/abdb#view
+
+# More info about bash scripting, https://linuxconfig.org/bash-scripting-tutorial
+
+# We make scripts to automate tasks
+# Conventions
+  # Conventions	# – requires given linux commands to be executed with root privileges either directly as a root user or by use of sudo command
+  # $ – requires given linux commands to be executed as a regular non-privileged user
+
+Step 1: First you need to find out where is your Bash interpreter located. Enter the following into your command line
+
+  # I am using a centos7 os --> operating system
+  # to update centos, use the yum package manager
+    yum update -y
+  # To check the interpreter, execute the following command
+  which bash
+  expected output:
+    # I did not have the which package isntalled. To isntall which
+    # To know more about install which, https://stackoverflow.com/questions/27815420/bash-centos7-which-command
+    # yum update && yum install which -y
+    # When I isntalled which, i got the following putput
+    [root@centos-1 /]# which bash
+    /usr/bin/bash
+    [root@centos-1 /]# 
+
+ Step 2
+   The next thing you need to do is open our favorite text editor and create a file called hello_world.sh. We will use nano for this step
+   nano hello_world.sh
+   # I got a nano command not found, what do I do?
+   # update and isntall the missing package
+   yum update && yum install nano -y
+
+      [root@centos-1 /]# cat hello_world.sh 
+      #!/usr/bin/bash
+      # declare STRING variable
+      STRING="Hello World"
+      # print variable on a screen
+      echo $STRING
+
+ Step 4  Navigate to the directory where your hello_world.sh script is located and make the file executable:
+  chmod +x hello_world.sh 
+  [root@centos-1 ~]# chmod +x hello_world.sh 
+  [root@centos-1 ~]# ls
+
+Step 5 Now you are ready to execute your first bash script:
+    ./hello_world.sh 
+    [root@centos-1 ~]# ./hello_world.sh 
+    Hello World
+    [root@centos-1 ~]# 
