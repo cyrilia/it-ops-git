@@ -5,9 +5,17 @@ A scripting language is a type of computer programming language used to provide 
 
 Bash: Bourne Again Shell is how we make linux do things. It could be used to write script
 
-To start a script, we type a shebang (#!/bin/bash)
+The beginning of your script file should start with "#!/bin/bash" on its own line. This tells the computer which type of interpreter to use for the script
 
-To execute a bash script, type bash <filename.sh> or ./<filename.sh>
-    *when running a script the bash command only needs a read permissions unlike ./ that needs execute permissions
+    An interpreter:
+        is a computer program that is used to directly execute program instructions written using one of the many high-level programming languages
 
-To add permissions, run chmod +x <filename.sh>
+The script files also need to have the “execute” permission to allow them to be run.
+To add this permission to a file run:
+    chmod +x <filename.sh>
+
+To execute a bash script run:
+    bash <filename.sh> OR ./<filename.sh>
+        *when running a script the [bash] command only needs a read permissions unlike ./ that needs execute permissions
+
+When wrtting scrits, it is advised to make comments for an easy understanding of our script.
