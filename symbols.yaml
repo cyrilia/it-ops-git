@@ -96,6 +96,10 @@ docker rm <containerid or name> -f
 docker rm container -f
 docker rm containerid -f 
 
+# command top add user
+adduser <username>
+# prompt you enter password and other info
+
 # create users
 useradd <username>
 useradd test
@@ -106,3 +110,60 @@ su mira
 # Delete a user
 userdel <username>
 userdel test
+
+# list docker containers
+docker pull ubuntu:20.04
+
+# verify image
+docker images
+
+# list all containers, running or not
+docker ps -a
+
+# to create a container with a name
+docker run -it --name cookie1 ubuntu:20.04 bash
+
+# to exit the container type exit
+exit
+
+# to use the container again
+docker start <container.name>
+docker start cookie1
+
+# enter a docker container
+docker exec -it <container.name> bash
+
+# the package manager for ubuntu is apt-get
+
+# update the container
+apt update && apt install -y upgrade
+Create 1 parent directory
+  2 sub directories
+
+
+Install packags
+nano
+sudo
+install
+
+# different permissions symbols and their associated values
+r = read = 4
+w = write = 2
+x = execute = 1
+
+rwx = 7
+drwxrwxrwx -- it a directory
+-rwxrwxrwx -- it is a file = - rwx          rwx     rwx -- it is a file = 777
+                              user/owner   group    others/member
+-rwx r-x r-x = 751
+
+drwxr-xr-x  = 755
+ 700
+
+To login as users
+docker exec -it -u test2 cookie1 bash
+
+# run this command to give user sudo rights
+usermod -aG sudo “username”
+sudo usermod -aG sudo test2
+
