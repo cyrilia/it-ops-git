@@ -1,0 +1,91 @@
+# What we will cover
+  - Computer Fundamentals
+    Architechture: Think about things that are physical about a computer e.g
+      - Motherboard: Computer Motherboard is designed on a piece of PCB Which is called a Printed Circuit Board where all other components are attached to it such as hard disk, processor, ram, etc
+      - Processor: Processor is again called as CPU which stands for central Processing Unit. It is also called as Heart Brain of Computer System.
+      - RAM: RAM stands for Random Access Memory which is temporary storage medium and its volatile memory. They tend to lose data when power is off. However, the speed of the computer depends upon ram as well.
+        - Now a days, we just talk about Memory
+      - Hard Disk or ROM: This is a permanent storage unit of a computer which can store data in high volume and also you can retrieve data whenever and wherever you need. The two common ones are are HDDs & SDD
+        - Now a days, we just talk about Storage
+# There are mainly four common functions of computer system Input Output Processing Storage
+  - Input
+  - Processing
+  - Output
+  - Storage
+# Types of Computer
+  - Super Computer
+  - Mainframe
+  - Mini
+  - Micro -- like personla laptop
+# Computer as in any internet of things (IoT) device is made of two parts
+  - Hardware: spoken about hardware and types above
+  - Software
+    - What is Computer Software: e.g whatsapp, zoom, android, ios 
+      - The computer software can be described as a collection of small programs that are programmed in such a way which are capable of performing specific and special task whenever desired
+      - There are two main times of comp Software:
+        - System software: e.g These are the software that directly interacts with the computer system. The primary examples are Operating systems and device drivers e.g android, ios 
+        - Application software: These are also called as customized software which is developed for personal use or developed for customers to perform some specific task e.g whatsapp, zoom, facebook, ms word, ms office 
+
+  - Networking Fundamentals
+    -  A network refers to two or more connected computers that can share resources such as data, a printer, an Internet connection, applications, or a combination of these resources. There are 3 main types
+    - LAN Local Area Network (LAN) - SOHO-
+    - Metropolitan Area Network (MAN) - Campus network
+    - Wide Area Network (WAN) - Internet
+
+ - The OSI Model — Why a Layered Network Model?
+  - Application: humans interact with the computer --> brower, whatsapp, zoom
+# what is binary: break it two things, bi -2, 0 & 1, decimal --> 
+  - Presentation: data in useable format and encryption
+  - Session: 
+  - Transport: TCP & UDP 
+  - Network: 
+  - Data Link: Data
+  - Physical: 
+
+! Operating Systems & Items
+  android, ios, Windows OS --> , MacOs --> Apple, Chrome OS ->, Linux Os; 
+# assignment: What are types of operating sytems that you know
+
+  Windows Os -- > Paid for, you need a license to use it. 
+    This is paid for, so this is what is called not open source
+  Linux Operating System --> Mostly Free no license needed.
+     --> open source
+
+
+
+!Comman
+Description:
+
+mv: Moves or renames files and directories
+
+chmod: Modifies file permissions
+
+chown: Changes the ownership of a file
+
+dd: Copies data from an input to an output
+
+pwd: Displays the name of the current directory
+
+ps: Lists the processes that are currently running in the system
+
+su: Simulates a login as another user or to become a superuser
+
+sudo: Runs a command as a super user, by default, or another named user
+
+grep: Used to search for specific strings of characters within a file or other command outputs. To search through the output of a previous command, grep must be piped at the end of the previous command.
+
+ifconfig: Used to display or configure network card related information. If issued without parameters, ifconfig will display the current network card(s) configuration. Note: While still widely in use, this command is deprecated. Use ip address instead.
+
+apt-get: Used to install, configure and remove packages on Debian and its derivatives. Note: apt-get is a user-friendly command line front-end for dpkg, Debian’s package manager. The combo dpkg and apt-get is the default package manager system in all Debian Linux derivatives, including Raspbian.
+
+iwconfig: Used to display or configure wireless network card related information. Similar to ifconfig, iwconfig will display wireless information when issued without parameters.
+
+shutdown: Shuts down the system, shutdown can be instructed to perform a number of shut down related tasks, including restart, halt, put to sleep or kick out all currently connected users.
+
+passwd: Used to change the password. If no parameters are provided, passwd changes the password for the current user.
+
+cat: Used to list the contents of a file and expects the file name as the parameter. The cat command is usually used on text files.
+
+man: Used to display the documentation for a specific command.
+# Install Docker
+https://docs.docker.com/get-docker/

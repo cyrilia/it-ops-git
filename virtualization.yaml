@@ -1,0 +1,57 @@
+What is virtualization
+  - virtualization is the ability to have a computer, exists on another computer
+  - Computer has its resources such as
+    - RAM - Memory
+    - Storage - ROM
+    - CPU - Processory
+    - Graphics card
+    - more
+
+Virtual machine --> another computer, but it depends on the hosts to exist. S, without the host, the virtual machine can not exisit
+  It needs to run on a hypervisor
+    - A hypervisor is an application that gives a host computer, to share its resources with guest computer
+      - Host is the physical computer
+      - Guest is the virtual computer that needs to host, to exist.
+
+  - There are two types of hypervisors
+    - Type 1 hypervisor - runs on bare metal --> just the physical computer
+    - Type 2 hypervisor - runs on a Host operation system --> physical computer + host operating system
+
+    - We will mostly use Type 2 hypervisors, because we do not have an extra machine to spare, to run a type 1 hypervisor
+    ! A virtual machine, is a fully operating syste, it has the base operation system and the binaries and folders and programs, that come on default
+      with the operating system
+
+Container --> its a type of virtual machines, that really is a file on your computer
+  - It has to run ontop of an application such as docker
+  - The Docker application, has to run on a type 2 hypervisor
+  ! A container, is made up of the base operation system and the necessary applications, needed to work
+
+
+The main operation systems out there are
+  Windows
+    Versions - Windows 11
+    Version - Windows 10
+    Version - Windows Server 2012
+    Version - Windows Server 2016
+
+  Linux
+    It has many flavours --> because it is mostly open source: it is free for everyone to use, you do not need a paid license for it
+      Main flavours:
+      - Red Hart --> is not a free linux distro --> centos 
+      - Debian -- > ubuntu & more
+      - Fedora
+      more
+    
+  Mac OS --> not free, not open source, you need to pay to use it
+    -- > actually is built ontop of linux base operating system
+  Solaris & others not free, need to pay to use it.
+    -- > actually is built ontop of linux base operating system
+
+
+  Today, we will start with docker
+
+  # install docker 
+  https://docs.docker.com/get-docker/
+  Mac intel based processor --> 
+  Windows intel based processor --> 
+  Mac M1 based processor-->

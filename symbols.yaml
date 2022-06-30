@@ -1,0 +1,108 @@
+~ tilder = home dir ~
+* everything *
+& and symbol run anything in the background &
+&& measn run two commands, and also ( sudo apt update && sudo apt install upgrade -y)
+/ forward slash --> move throught the fule system /+ctory below
+# ignore,use it to make a comment 
+> take output of command, write into a file, deleting everything inside the file echo Hi, echo Hi > hi.yaml
+< take the contents of a file and use it echo < hi.yaml
+>> append or add to the contents of the file --> echo " Another Hi" >>hi.yaml
+| pipe symbol use it to filer, reditect the output of a command and make it the input of another
+
+docker –version
+docker pull
+docker run
+docker ps -- list containers running on our local machine
+docker ps -a -- list containers running and stopped on our local machine
+docker exec -- execute commands on containers
+docker stop -- to gracefully stop a container
+docker kill --  to immediately stop a container, without giving it the chance to gracefully shutdown
+docker login -- login to the docker registry
+docker push
+docker images -- list docker images
+docker rm -- remove docker conatiners
+docker rmi -- remove docker images
+docker build -- build a docker images
+
+! What we will be using
+
+  docker run
+  docker ps -- list containers running on our local machine
+  docker ps -a -- list containers running and stopped on our local machine
+  docker exec -- execute commands on containers
+  docker stop -- to gracefully stop a container
+  docker kill --  to immediately stop a container, without giving it the chance to gracefully shutdown
+
+# list docker containers
+docker ps
+
+# list all containers, running or not
+docker ps -a
+
+# enter a docker container
+$ docker exec -it container id bash
+docker exec -it c6bafa4e60c3 bash
+
+
+pwd
+  print working directory
+  present working directory
+
+Navigate the file system:
+
+  Absolute file path --> it is the path relative to the users home dir
+  Relative file path --> it is the path from the pwd
+
+Practicing hot keys
+  
+
+
+Procols: 
+DNS: The Domain Name System, translates human readable domain names (for example, www.amazon.com) to machine readable IP addresses (for example, 192.0. 2.44).
+
+  Responsible for resolving domain names names to ip address
+  Domain name --human readable
+  Ip address -- both human and machine readable
+  human types amazon.com =  DNS = 192.0. 2.44
+              http://locahost DNS  http://127.0.0.1
+  http://locahost = http://127.0.0.1
+
+! today practice
+docker pull ubuntu:20.04 # telling the docker daemon to pull the ubuntu operating system images frm the docker remote pository to out local repository
+docker run -d ubuntu:20.04
+# command to create and enter a container
+docker run -it ubuntu:20.04 bash
+  to leave the container and shut it down, type exit
+
+# to enter the conatiner
+type docker ps a
+  copy the container id
+
+  docker exec -it ab3f87b7db66 bash
+
+docker ps
+docker ps -a 
+docker exec
+docker stop 
+docker kill 
+
+# to delete a docker container
+docker rm <containerid or name>
+docker rm container
+docker rm containerid
+
+# Error response from daemon: You cannot remove a running container ab3f87b7db661c399b21d9781369249def6cec7feb3fc38698b126c96da04def. Stop the container before attempting removal or force remove
+docker rm <containerid or name> -f
+docker rm container -f
+docker rm containerid -f 
+
+# create users
+useradd <username>
+useradd test
+
+# Verify user exist
+su mira
+
+# Delete a user
+userdel <username>
+userdel test

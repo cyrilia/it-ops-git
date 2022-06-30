@@ -1,0 +1,110 @@
+! Git Hub
+
+# Install git on Windows
+https://www.atlassian.com/git/tutorials/install-git#windows
+
+# Install git on Mac
+https://www.atlassian.com/git/tutorials/install-git#mac-os-x
+
+
+
+What is github
+  * It is a version control system
+  * That is free and open source --> It is free, so we do not need a license for it
+  * Most most used version control system 
+
+  * It tracks and manages the changes in what we do on your computer
+  * 
+
+  password:
+    can not add permissions to a password
+  token: random string --> + expiry date
+    permissions to a token
+
+
+
+What is enviroment
+  Refering to where anything is located
+    local enviroment: Your personal laptop, something that is local or immediate to you e.g pictures on your phone
+    remote enviorment: is anywhere that you have access to, but it is not local or immediately accessible to you
+    e.g pictures that you have uplocated from your phone and stored them in your facebook profile
+
+    repository: it is a storage location
+      It could be files, folders stored in a location, either remote or local
+
+    / root beginning
+    /its-ops/week1/network/netfun.yaml  
+
+    ~/Documents/git/file1.yaml
+                    file2.yaml
+                    three.yaml
+                    three.txt
+                    threedvsdsd
+                    threedsbdsbgrsg
+    ~/Documents/git/
+                .gitignore [three*, ]
+
+
+    /Users/ditah/ = ~
+
+    shift + ~
+
+echo "# it-ops" > README.md --> replace
+cat README.md
+echo "# it-ops2" >> README.md --> append
+echo "# it-ops2" >> README.md 
+echo it-ops > README.md 
+echo "# This is my first git commit" > README.md
+cat README.md
+echo "# it-ops" >> README.md
+echo "# my name is Ditah" >> README.md
+
+  >: take the output, create a file, put the contents inside
+  >>: take the output, create a file, put the contents inside
+      or if the file exists, add to another line
+  "my name is Ditah": we want to make the computer, copy everything as one word
+
+# step to create a repo on cli
+echo "# it-ops" >> file1
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dckumbong/it-ops.git
+# use this when you have https
+# git push -u origin main
+
+# use this with tokens
+git push https://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@github.com/dckumbong/it-ops.git
+
+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
+
+# set username
+git config --global user.name dckumbong
+
+# set password
+git config --global user.email dckumbong@gmail.com
+
+# user
+git config --global --get user.name
+
+# email
+git config --global --get user.email
+
+# To sign in, you'll need to download git CLI, then do gh auth login
+gh auth login
+
+# git local repository --local comp
+  * dev
+  * staging
+  * remote
+
+# git remote repo -- github website
+# git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+
+
+git push https://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@github.com/dckumbong/it-ops.git
+
+
+# create a new branch
+git checkout -b april
