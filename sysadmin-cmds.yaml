@@ -1,0 +1,104 @@
+##https://opensource.com/article/17/7/20-sysadmin-commands
+
+          20 system administration commands
+
+1. curl: is a non-interactive web browser able to pull information we need from the internet and display it to our terminal or save it to a file. 
+  * It acts like web browsers like firefox, chromium except it renders raw information.
+  * This command also transfers data to or from a server using different protocols e.g http, ldap, smb, etc
+    # Protocol: allows connected devices to communicate with each other, regardless of any differences in their internal processes, structure or design
+
+
+2. python -m json.tool / jq
+
+
+3. ls:
+    ls -------> list the content of current directory
+    ls -l   --> long list
+    ls -ltr --> long list based on reverse timing
+    ls -lt  --> long list based on Time
+    ls -a   --> list hidden files
+    ls -lh  --> long list files with human readable size
+        *ls also accept arguments e.g ls Documents
+        *to know more about ls we can loof at the manual (man ls)
+
+-rw-r--r--   1 root root 12298 Nov 13  2020 anaconda-post.log
+lrwxrwxrwx   1 root root     7 Nov 13  2020 bin -> usr/bin
+drwxr-xr-x   3 root root  4096 Apr 23 02:29 boot
+
+1. Type = '-' file / 'd' dir / 'l' link
+2. number of links
+3. owner of the file
+4. group owner
+5. size
+6. Time and date the file was modified
+7. file name
+
+
+4. tail: output the last part of files
+tails -n: prints the last K lines instead of the first 10
+    *by default it prints the last 10 lines of a file to standard output
+
+
+5. cat: display the content of a file - concatenates and prints files. Might be issued to check the contents of a file or to confirm the version of the application that we have already built locally.
+
+6. grep: searches for the named input or file pattern in the ouput of another command.
+  grep -i: ignore case distinctions
+    *To best use grep, we need to pipe it to the previous output.
+      e.g When running "ls | grep .yaml"
+      these are my outputs...
+      > docker.yaml    > git.yaml <    > symbols.yaml
+
+
+7. ps:
+
+
+8. env: it allows you to set or print the environment variables. It could be useful to verify if the wrong environment variable 
+
+
+9. top:
+
+
+10. netstat:
+
+
+
+11. ip:
+
+
+12. lsof:
+
+
+13. df:
+
+
+14. du:
+
+
+15. id: it is used to check the user running the application and to return the user identity. 
+  * After running "id", thte first line of the output on the CLI was
+    "uid=501(ceerilia) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts)"
+
+
+16. chmod: it can correct the permissions enabled to your user to run the binary (computer language). 
+    e.g chmod +x <filename>
+        chmod g+o 
+
+
+17. dig / nslookup:
+
+
+18. firewall-cmd:
+
+
+19. sestatus:
+
+
+20. history: it shows the history of commands you have issued since the starts of your session. It could then be used to log which commands was used to troubleshoot an application.
+  e.g When i ran "history | tail -4", this was the output
+
+        1644  ls | grep .yaml
+        1645  clear
+        1646  history
+        1647  clear
+        * If you want to execute a command on the history but don't want to retype it again, use "!" beofre the command number to re-execute.
+        # For instance, !1644.
